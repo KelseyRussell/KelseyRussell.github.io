@@ -1,0 +1,70 @@
+
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+    background:url("avsgame.jpeg") no-repeat center;
+    background-color: white;
+
+  }
+  
+
+  
+
+  .container {
+    position: absolute;
+    top:30%;
+    left:60%;
+    transform:translate(-50%,-50%);
+
+
+    z-index: 1;
+    max-width: 100%;
+  }
+  
+  
+  .image {
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: blue;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: top right;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: top right;
+  }
+  
+  .fa-user:hover {
+    color: #eee;
+  }
