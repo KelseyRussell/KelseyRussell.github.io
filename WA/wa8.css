@@ -13,17 +13,7 @@ h1 {
     color: #333;
 }
 
-@keyframes hoverAnimation {
-    0% {
-        color: #333; /* Start with default color */
-    }
-    50% {
-        color: #f00; /* Change color midway */
-    }
-    100% {
-        color: #333; /* Return to default color */
-    }
-}
+
 
 .nav{
     height: 75vh;
