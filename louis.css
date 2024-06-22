@@ -2,29 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(143, 185, 143);
-    color:green;
+    background-color: blanchedalmond;
 }
-
-
-h1 {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-@keyframes hoverAnimation {
-    0% {
-        color: #333; /* Start with default color */
-    }
-    50% {
-        color: #f00; /* Change color midway */
-    }
-    100% {
-        color: #333; /* Return to default color */
-    }
-}
-
 .nav{
     height: 75vh;
     display:flex;
@@ -38,7 +17,6 @@ h1 {
     width:100%;
     text-align: center;
 }
-
 .nav a{
     width:18vw;
     text-align: center;
@@ -74,7 +52,7 @@ img{
 }
 
 #red-ball{
-    background-color: blue;
+    background-color: crimson;
     width: 20px;
     height:20px;
     border-radius: 50%;
@@ -84,29 +62,11 @@ img{
 }
 
 #louis{
+    background-color: crimson;
     width: 20px;
     height:20px;
     border-radius: 50%;
     position: absolute;
-    left:0vw; /*change position of ball*/
+    left:50vw; /*change position of ball*/
     top: 300px;
-    animation-duration: 6s;
-    animation-delay: 6s;
-    animation-direction:alternate;
-    animation-timing-function: linear; */
-}
-
-@keyframes louismove {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
-}
-
-
-#louis:hover{
-    animation: louismove 7s infinite;
-
 }
