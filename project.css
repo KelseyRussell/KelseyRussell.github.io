@@ -59,9 +59,11 @@ body {
     transition: color 0.3s ease; 
 }
 
-.grid-container > div:hover {
+
+
+/* .grid-container > div:hover {
     color: lightblue; 
-}
+} */
 
 .grid-container > div h2 {
     margin-top: 0;
@@ -91,13 +93,13 @@ body {
 
 @media screen and (max-width: 480px) {
     .nav {
-        position: static; /* Change position to static so it flows naturally */
+        position: static; 
         background-color: #333;
         text-align: center;
     }
 
     .nav ul {
-        display: block; /* Display the menu items in a vertical list */
+        display: block; 
         padding: 0;
     }
 
@@ -106,22 +108,22 @@ body {
     }
 
     .nav ul li a {
-        display: block; /* Display menu items as block elements for full width */
-        padding: 15px 0; /* Adjust padding for better touch interaction */
+        display: block; 
+        padding: 15px 0; 
     }
 
     .content {
-        margin-top: 0; /* Remove margin top to utilize full screen space */
-        padding: 10px; /* Adjust padding for better readability */
+        margin-top: 0; 
+        padding: 10px; 
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Change to a single column layout for better responsiveness */
-        gap: 5px; /* Reduce gap between grid items for smaller screens */
-        padding: 5px; /* Adjust padding for better spacing */
+        grid-template-columns: 1fr; 
+        gap: 5px; 
+        padding: 5px; 
     }
 
     .grid-container > div {
-        padding: 15px; /* Adjust padding for better spacing */
+        padding: 15px; 
     }
 }
