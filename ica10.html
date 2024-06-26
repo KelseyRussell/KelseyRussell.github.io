@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Java listeners</h2>
+
+
+<button id="button">Hello</button>
+
+<p id="java"></p>
+
+<script>
+var x = document.getElementById("button");
+x.addEventListener("mouseover", myFunction);
+// x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("java").innerHTML += "Moused over!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("java").innerHTML += "Moused out!<br>";
+}
+</script>
+
+</body>
+</html>
