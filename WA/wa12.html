@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css">
+    <title>Random Quote Trivia!</title>
+    <!-- Include jQuery for JSONP request -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header>Random Quote Trivia</header>
+        <section class="quotes">
+            <div class="quote-text" id="js-quote-text"></div>
+            <div class="quote-text" id="js-answer-text"></div>
+        </section>
+        <section class="controls">
+            <button type="button" id="js-new-quote" class="new-quote button">
+                Generate a new quote!
+            </button>
+            <button type="button" id="js-tweet" class="twitter button">
+                Show me the answer!
+            </button>
+        </section>
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+    <script src="wa12.js"></script>
+</body>
+</html>
