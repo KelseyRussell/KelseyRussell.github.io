@@ -18,20 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
   
       var newNumberBox = document.createElement('div');
       newNumberBox.classList.add('number-box');
-      var newRandomNumber = generateRandomNumber(); 
-      newNumberBox.innerText = newRandomNumber; 
+      var newRandomNumber = generateRandomNumber();
+      newNumberBox.innerText = newRandomNumber;
   
       var newInputLabel = document.createElement('label');
       newInputLabel.setAttribute('for', 'response');
-      newInputLabel.textContent = 'Is this your number? (Type "yes" or "no")';
+      newInputLabel.textContent = 'Is this your number? (Type "yes" or "no")   ';
+  
       var newInput = document.createElement('input');
       newInput.setAttribute('type', 'text');
-      newInput.setAttribute('class', 'response'); 
+      newInput.setAttribute('class', 'response');
   
       var newButton = document.createElement('button');
       newButton.textContent = 'Submit';
       newButton.addEventListener('click', function() {
-        checkNumber(newInput, newNumberBox);
+        checkNumber(newInput, newNumberBox, newResponseSection);
       });
   
       newResponseSection.appendChild(newNumberBox);
@@ -42,18 +43,27 @@ document.addEventListener('DOMContentLoaded', function() {
       container.appendChild(newResponseSection);
     }
   
-    function checkNumber(inputField, numberBox) {
-      var randomNumber = generateRandomNumber();
-      numberBox.innerText = randomNumber;
-  
+    function checkNumber(inputField, numberBox, responseSection) {
+      var randomNumber = parseInt(numberBox.innerText, 10); // Get the displayed random number
       var response = inputField.value.toLowerCase();
   
       if (response === 'yes') {
         alert('Congratulations! Your number is ' + randomNumber);
-        responseSection.style.display = 'none'; 
+  
+        // Remove all other response sections except for the current one
+        var allResponseSections = document.querySelectorAll('.response-section');
+        allResponseSections.forEach(function(section) {
+          if (section !== responseSection) {
+            section.remove();
+          }
+        });
+  
+        // Hide the submit button and current response section after showing the correct number
+        responseSection.style.display = 'none';
+        submitButton.style.display = 'none';
       } else if (response === 'no') {
-        createNewResponseSection(); 
-        inputField.value = ''; 
+        createNewResponseSection();
+        inputField.value = '';
       } else {
         alert('Please type "yes" or "no".');
       }
@@ -65,10 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     submitButton.addEventListener('click', function() {
       var responseInput = document.getElementById('response');
-      checkNumber(responseInput, numberBox);
+      var currentResponseSection = document.querySelector('.response-section');
+      checkNumber(responseInput, numberBox, currentResponseSection);
     });
   });
-
-
-  
-  
