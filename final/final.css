@@ -1,0 +1,64 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px; /* Increased padding for more spacing */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.number-box {
+  font-size: 28px;
+  padding: 15px; 
+  width: 150px;
+  margin: 20px auto 30px; 
+  background-color: plum;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.response-section {
+  margin-bottom: 10px; /* Space between each prompt/input section */
+}
+
+.response-section > * {
+  margin-bottom: 10px; /* Space between elements inside response-section */
+}
+
+input[type="text"] {
+  padding: 8px; /* Increased padding for more spacing */
+  font-size: 14px; /* Increased font size for better readability */
+  border: 1px solid plum;
+  border-radius: 4px;
+  width: 150px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: rgb(77, 140, 77);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(11, 32, 11);
+}
+
+  
+  
+  
+  
+  
+
