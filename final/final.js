@@ -44,13 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     function checkNumber(inputField, numberBox, responseSection) {
-      var randomNumber = parseInt(numberBox.innerText, 10); // Get the displayed random number
+      var randomNumber = parseInt(numberBox.innerText, 10); 
       var response = inputField.value.toLowerCase();
   
       if (response === 'yes') {
         alert('Congratulations! Your number is ' + randomNumber);
   
-        // Remove all other response sections except for the current one
         var allResponseSections = document.querySelectorAll('.response-section');
         allResponseSections.forEach(function(section) {
           if (section !== responseSection) {
@@ -58,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
   
-        // Hide the submit button and current response section after showing the correct number
         responseSection.style.display = 'none';
         submitButton.style.display = 'none';
       } else if (response === 'no') {
