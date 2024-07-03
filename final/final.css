@@ -8,7 +8,7 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px; /* Increased padding for more spacing */
+  padding: 40px; 
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -26,16 +26,16 @@ body {
 }
 
 .response-section {
-  margin-bottom: 10px; /* Space between each prompt/input section */
+  margin-bottom: 10px; 
 }
 
 .response-section > * {
-  margin-bottom: 10px; /* Space between elements inside response-section */
+  margin-bottom: 10px; 
 }
 
 input[type="text"] {
-  padding: 8px; /* Increased padding for more spacing */
-  font-size: 14px; /* Increased font size for better readability */
+  padding: 8px; 
+  font-size: 14px; 
   border: 1px solid plum;
   border-radius: 4px;
   width: 150px;
