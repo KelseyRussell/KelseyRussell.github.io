@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guess Your Number</title>
-<link rel="stylesheet" href="final.css">
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/canvas-confetti.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Your Number</title>
+    <link rel="stylesheet" href="final.css">
 </head>
 <body>
-<div class="container">
-  <div id="numberBox" class="number-box">
-  </div>
-  <div id="responseSection" style="display: none;">
-    <label for="response">Is this your number? (Type 'yes' or 'no')</label>
-    <input type="text" id="response" name="response">
-    <button id="submitButton">Submit</button>
-  </div>
- 
-
-<script src="final.js"></script>
-
+  <h1>What is your phone number?</h1>
+  <h2>select an animal from the word list to enter your phone number</h2>
+    <div class="container">
+        <div id="numberBox" class="number-box">
+        </div>
+        <div id="responseSection" style="display: none;">
+            <label for="response"></label>
+            <input type="text" id="response" name="response">
+            <button id="submitButton">Submit</button>
+        </div>
+        <div id="confirmationSection"></div>
+        <div id="correctNumbersBox"></div>
+    </div>
+    <script src="final.js"></script>
 </body>
 </html>
-
-
-
-
-
-
